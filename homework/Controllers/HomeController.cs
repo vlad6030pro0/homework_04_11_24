@@ -12,8 +12,6 @@ public class HomeController : Controller
     private readonly IRandomNumberService randomNumberService;
     private readonly IAddVisit addVisit;
     private readonly IVisits visits;
-    private FileStream file;
-    private StreamReader reader;
 
     public HomeController(ILogger<HomeController> logger, IAddVisit addVisit, IVisits visits, ITimeService timeService, IRandomNumberService randomNumberService)
     {
@@ -27,22 +25,39 @@ public class HomeController : Controller
 
     public void UseAddVisitService()
     {
-        addVisit.AddingVisit(new FileStream("visits.txt", FileMode.Append));
+        addVisit.AddingVisit(new StreamWriter("visits.txt", true));
     }
-    public string UseViewingVisitsService()
+    // public string UseViewingVisitsService()
+    // {
+    //     return visits.ViewingVisits(new StreamReader("visits.txt"));
+    // }
+    // public string UseTimeService()
+    // {
+    //     return timeService.GetCurrentTime();
+    // }
+
+    // public int UseRandomNumberService()
+    // {
+    //     return randomNumberService.GetRandomNumber();
+    // }
+
+    public IActionResult RandomNumber()
     {
-        return visits.ViewingVisits(new StreamReader("visits.txt"));
-    }
-    public string UseTimeService()
-    {
-        return timeService.GetCurrentTime();
+        ViewBag.Number = randomNumberService.GetRandomNumber();
+        return View();
     }
 
-    public string UseRandomNumberService()
+    public IActionResult Time()
     {
-        return randomNumberService.GetRandomNumber();
+        ViewBag.Time = timeService.GetCurrentTime();
+        return View();
     }
 
+    public IActionResult ViewingVisits()
+    {
+        ViewBag.Visits = visits.ViewingVisits(new StreamReader("visits.txt"));
+        return View();
+    }
     public IActionResult Index()
     {
         UseAddVisitService();

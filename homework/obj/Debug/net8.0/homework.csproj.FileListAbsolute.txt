@@ -28,3 +28,4 @@ D:\prog\repos_vsc\homework_04_11_24\homework\obj\Debug\net8.0\refint\homework.dl
 D:\prog\repos_vsc\homework_04_11_24\homework\obj\Debug\net8.0\homework.pdb
 D:\prog\repos_vsc\homework_04_11_24\homework\obj\Debug\net8.0\homework.genruntimeconfig.cache
 D:\prog\repos_vsc\homework_04_11_24\homework\obj\Debug\net8.0\ref\homework.dll
+d:\prog\repos_vsc\homework_04_11_24\homework\obj\Debug\net8.0\homework.sourcelink.json

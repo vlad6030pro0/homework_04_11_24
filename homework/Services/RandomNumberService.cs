@@ -5,8 +5,8 @@ namespace homework.Services;
 
 public class RandomNumberService : IRandomNumberService
 {
-    public string GetRandomNumber()
+    public int GetRandomNumber()
     {
-        return new Random().Next(1,100).ToString();
+        return new Random().Next(1,101);
     }
 }

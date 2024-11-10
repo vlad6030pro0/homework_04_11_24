@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\prog\\repos_vsc\\homework_04_11_24\\homework\\homework.csproj": {}
+    "d:\\prog\\repos_vsc\\homework_04_11_24\\homework\\homework.csproj": {}
   },
   "projects": {
-    "D:\\prog\\repos_vsc\\homework_04_11_24\\homework\\homework.csproj": {
+    "d:\\prog\\repos_vsc\\homework_04_11_24\\homework\\homework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\prog\\repos_vsc\\homework_04_11_24\\homework\\homework.csproj",
+        "projectUniqueName": "d:\\prog\\repos_vsc\\homework_04_11_24\\homework\\homework.csproj",
         "projectName": "homework",
-        "projectPath": "D:\\prog\\repos_vsc\\homework_04_11_24\\homework\\homework.csproj",
+        "projectPath": "d:\\prog\\repos_vsc\\homework_04_11_24\\homework\\homework.csproj",
         "packagesPath": "C:\\Users\\N4K\\.nuget\\packages\\",
-        "outputPath": "D:\\prog\\repos_vsc\\homework_04_11_24\\homework\\obj\\",
+        "outputPath": "d:\\prog\\repos_vsc\\homework_04_11_24\\homework\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

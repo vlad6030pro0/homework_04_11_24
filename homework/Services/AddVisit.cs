@@ -6,10 +6,9 @@ namespace homework.Services;
 
 public class AddVisit : IAddVisit
 {
-    public void AddingVisit(FileStream file)
+    public void AddingVisit(StreamWriter writer)
     {
-        byte[] buffer = Encoding.UTF8.GetBytes(DateTime.Now.ToString("G")+"\n");
-        file.Write(buffer, 0, buffer.Length);    
-        file.Close();
+        writer.WriteLine(DateTime.Now.ToString("G"));
+        writer.Close();
     }
 }
